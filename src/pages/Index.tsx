@@ -51,7 +51,7 @@ const Index = () => {
             <h1 className="text-5xl font-semibold leading-[0.95] text-primary-foreground sm:text-7xl lg:text-8xl">
               Welcome to your newest abode
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-primary-foreground/88 sm:text-xl">
+            <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
               Labbe Build + Remodel builds, remodels, renovates, and restores homes across greater Boston, Cambridge, and the North Shore.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
