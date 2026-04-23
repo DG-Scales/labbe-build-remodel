@@ -54,11 +54,11 @@ const Index = () => {
             <p className="mb-5 inline-flex items-center gap-2 border-l-4 border-accent bg-card/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
-            <div className="relative min-h-[10.5rem] sm:min-h-[17rem] lg:min-h-[18rem]">
+            <div className="relative min-h-[12.5rem] sm:min-h-[18rem] lg:min-h-[19rem]">
               <h1 className="hero-crossfade-out absolute inset-0 text-5xl font-semibold leading-[0.95] text-primary-foreground sm:text-7xl lg:text-8xl">
                 Soak in the comfort of your new space
               </h1>
-              <h1 className="hero-crossfade absolute inset-0 text-5xl font-semibold leading-[0.95] text-primary-foreground opacity-0 sm:text-7xl lg:text-8xl">
+              <h1 className="hero-crossfade absolute inset-0 max-w-4xl text-4xl font-semibold leading-[1.02] text-primary-foreground opacity-0 sm:text-6xl lg:text-7xl">
                 Quality You Can See. Results That Last.
               </h1>
             </div>

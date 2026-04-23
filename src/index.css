@@ -135,11 +135,11 @@ All colors MUST be HSL.
   }
 
   .hero-crossfade {
-    animation: hero-crossfade 16s ease-in-out infinite;
+    animation: hero-crossfade 18s ease-in-out infinite;
   }
 
   .hero-crossfade-out {
-    animation: hero-crossfade-out 16s ease-in-out infinite;
+    animation: hero-crossfade-out 18s ease-in-out infinite;
   }
 
   @keyframes reveal-up {
@@ -155,11 +155,11 @@ All colors MUST be HSL.
 
   @keyframes hero-crossfade {
     0%,
-    42% {
+    44% {
       opacity: 0;
     }
-    50%,
-    88% {
+    52%,
+    86% {
       opacity: 1;
     }
     100% {
@@ -169,11 +169,11 @@ All colors MUST be HSL.
 
   @keyframes hero-crossfade-out {
     0%,
-    42% {
+    44% {
       opacity: 1;
     }
-    50%,
-    88% {
+    52%,
+    86% {
       opacity: 0;
     }
     100% {
