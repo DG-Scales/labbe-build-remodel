@@ -49,7 +49,7 @@ const Index = () => {
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
             <h1 className="text-5xl font-semibold leading-[0.95] text-primary-foreground sm:text-7xl lg:text-8xl">
-              Luxury craftsmanship for exceptional homes
+              Beautiful home renovations, built with care
             </h1>
             <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
               Labbe Build + Remodel builds, remodels, renovates, and restores homes across greater Boston, Cambridge, and the North Shore.
