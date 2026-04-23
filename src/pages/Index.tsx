@@ -34,7 +34,7 @@ const Index = () => {
         <img
           src={luxuryKitchen}
           alt="Warm luxury kitchen renovation with wood cabinetry and stone counters"
-          className="hero-crossfade absolute inset-0 h-full w-full object-cover opacity-0 motion-safe:animate-slow-pan"
+          className="hero-crossfade absolute inset-0 h-full w-full object-cover opacity-0"
         />
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
