@@ -1,6 +1,7 @@
 import { ArrowRight, Bath, Brush, Hammer, Home, Mail, MapPin, Phone, Ruler, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroHome from "@/assets/labbe/hero-home.jpg";
+import luxuryKitchen from "@/assets/labbe/luxury-kitchen.jpg";
 import bathroomImage from "@/assets/labbe/bathroom.jpeg";
 import windowImage from "@/assets/labbe/window.jpeg";
 import paintImage from "@/assets/labbe/paint.jpeg";
@@ -29,6 +30,11 @@ const Index = () => {
           src={heroHome}
           alt="A refreshed home exterior representing Labbe Build + Remodel renovation work"
           className="absolute inset-0 h-full w-full object-cover motion-safe:animate-slow-pan"
+        />
+        <img
+          src={luxuryKitchen}
+          alt="Warm luxury kitchen renovation with wood cabinetry and stone counters"
+          className="hero-crossfade absolute inset-0 h-full w-full object-cover opacity-0 motion-safe:animate-slow-pan"
         />
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
