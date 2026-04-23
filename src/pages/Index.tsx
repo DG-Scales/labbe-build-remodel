@@ -44,7 +44,7 @@ const Index = () => {
             <span className="hidden text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground sm:inline">Labbe Build + Remodel</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
-            <a className="transition hover:text-primary-foreground" href="#services">Services</a>
+            <a className="transition hover:text-primary-foreground" href="#services">Home / Services</a>
             <a className="transition hover:text-primary-foreground" href="#about">About</a>
             <Link className="transition hover:text-primary-foreground" to="/reviews">Reviews</Link>
             <a className="transition hover:text-primary-foreground" href="#contact">Contact</a>
