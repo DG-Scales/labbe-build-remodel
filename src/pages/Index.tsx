@@ -58,7 +58,7 @@ const Index = () => {
               <h1 className="hero-crossfade-out absolute inset-0 text-5xl font-semibold leading-[0.95] text-primary-foreground sm:text-7xl lg:text-8xl">
                 Soak in the comfort of your new space
               </h1>
-              <h1 className="hero-crossfade absolute inset-0 max-w-4xl text-4xl font-semibold leading-[1.02] text-primary-foreground opacity-0 sm:text-6xl lg:text-7xl">
+              <h1 className="hero-crossfade absolute inset-0 max-w-3xl text-3xl font-semibold leading-tight text-primary-foreground opacity-0 sm:text-5xl lg:text-6xl">
                 Quality You Can See. Results That Last.
               </h1>
             </div>
