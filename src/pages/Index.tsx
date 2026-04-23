@@ -39,7 +39,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={labbeLogo} alt="Labbe Build + Remodel logo" className="h-12 w-auto rounded-sm bg-card/90 p-1.5 shadow-soft" />
+            <img src={labbeLogo} alt="Labbe Build + Remodel logo" className="h-16 w-auto drop-shadow-lg" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground sm:inline">Labbe Build + Remodel</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
