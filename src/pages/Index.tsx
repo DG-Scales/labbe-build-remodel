@@ -55,7 +55,7 @@ const Index = () => {
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
             <div className="relative min-h-[11rem] sm:min-h-[15rem] lg:min-h-[16rem]">
-              <h1 className="hero-crossfade-out absolute inset-0 max-w-3xl text-3xl font-semibold leading-tight text-primary-foreground sm:text-5xl lg:text-6xl">
+              <h1 className="hero-crossfade-out absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground sm:text-5xl lg:text-6xl text-7xl">
                 Soak in the<br />comfort of your<br />new space
               </h1>
               <h1 className="hero-crossfade absolute inset-x-0 top-8 max-w-4xl font-semibold leading-[1.02] text-primary-foreground opacity-0 sm:top-10 sm:text-6xl lg:top-12 lg:text-7xl text-8xl">
