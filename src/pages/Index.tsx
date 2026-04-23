@@ -1,5 +1,6 @@
 import { ArrowRight, Bath, Brush, Hammer, Home, Mail, MapPin, Phone, Ruler, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroHome from "@/assets/labbe/hero-home.jpg";
 import bathroomImage from "@/assets/labbe/bathroom.jpeg";
 import windowImage from "@/assets/labbe/window.jpeg";
 import paintImage from "@/assets/labbe/paint.jpeg";
@@ -25,8 +26,8 @@ const Index = () => {
     <main className="min-h-screen overflow-hidden bg-background text-foreground">
       <section className="relative min-h-[92vh] overflow-hidden">
         <img
-          src={bathroomImage}
-          alt="Warm luxury bathroom renovation with refined finishes"
+          src={heroHome}
+          alt="A refreshed home exterior representing Labbe Build + Remodel renovation work"
           className="absolute inset-0 h-full w-full object-cover motion-safe:animate-slow-pan"
         />
         <div className="absolute inset-0 bg-hero-overlay" />
@@ -48,7 +49,7 @@ const Index = () => {
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
             <h1 className="text-5xl font-semibold leading-[0.95] text-primary-foreground sm:text-7xl lg:text-8xl">
-              Warm, refined spaces built for everyday living
+              Soak in the comfort of your new space
             </h1>
             <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
               Labbe Build + Remodel builds, remodels, renovates, and restores homes across greater Boston, Cambridge, and the North Shore.
