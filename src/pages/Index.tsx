@@ -59,7 +59,7 @@ const Index = () => {
                 Quality You Can See. Results That Last.
               </h1>
               <h1 className="hero-crossfade absolute inset-x-0 top-8 max-w-4xl font-semibold leading-[1.02] text-primary-foreground opacity-0 sm:top-10 sm:text-6xl lg:top-12 lg:text-7xl text-8xl">
-                Soak in the comfort of your new space
+                Soak in the comfort<br />of your new<br />space
               </h1>
             </div>
             <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
