@@ -5,10 +5,10 @@ import labbeLogo from "@/assets/labbe/labbe-logo.png";
 
 const reviewLinks = [
   {
-    title: "Leave a Google review",
-    text: "Share a few kind words about your experience so local homeowners can find a remodeler they can trust.",
+    title: "Leave a 5-star Google review",
+    text: "If you had a great experience, a 5-star review and a few kind words help local homeowners find a remodeler they can trust.",
     href: "https://www.google.com/search?q=Labbe+Build+Remodel+review",
-    label: "Review on Google",
+    label: "Leave 5 stars",
     icon: Star,
   },
   {
@@ -50,7 +50,7 @@ const Reviews = () => {
               Help good work reach more good homes.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-              If Labbe Build + Remodel brought care, craftsmanship, and trust to your project, your review or follow helps the next homeowner feel confident reaching out.
+              If Labbe Build + Remodel brought care, craftsmanship, and trust to your project, a 5-star review or follow helps the next homeowner feel confident reaching out.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ const Reviews = () => {
               <img src={labbeLogo} alt="Labbe Build + Remodel review logo" className="h-20 w-auto rounded-sm bg-background p-2" />
               <div>
                 <h2 className="text-3xl font-semibold">Thank you for the support.</h2>
-                <p className="mt-3 leading-7 text-muted-foreground">A positive review, follow, or referral is one of the most meaningful ways to support local craftsmanship.</p>
+                <p className="mt-3 leading-7 text-muted-foreground">A 5-star review, follow, or referral is one of the most meaningful ways to support local craftsmanship.</p>
               </div>
             </div>
           </div>
