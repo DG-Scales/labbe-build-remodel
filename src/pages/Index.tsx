@@ -1,4 +1,5 @@
-import { ArrowRight, Bath, Brush, Hammer, Home, Mail, MapPin, Phone, Ruler, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, Bath, Brush, Hammer, Home, Mail, MapPin, MessageSquareHeart, Phone, Ruler, ShieldCheck, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroHome from "@/assets/labbe/hero-home.jpg";
 import luxuryKitchen from "@/assets/labbe/luxury-kitchen.jpg";
@@ -45,6 +46,7 @@ const Index = () => {
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
             <a className="transition hover:text-primary-foreground" href="#services">Services</a>
             <a className="transition hover:text-primary-foreground" href="#about">About</a>
+            <Link className="transition hover:text-primary-foreground" to="/reviews">Reviews</Link>
             <a className="transition hover:text-primary-foreground" href="#contact">Contact</a>
           </div>
         </nav>
@@ -71,6 +73,9 @@ const Index = () => {
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <a href="mailto:kevinlabbe@comcast.net">Email Kevin <Mail /></a>
+              </Button>
+              <Button asChild variant="subtle" size="xl">
+                <Link to="/reviews">Leave a review <MessageSquareHeart /></Link>
               </Button>
             </div>
           </div>
