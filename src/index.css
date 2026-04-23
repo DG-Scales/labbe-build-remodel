@@ -8,35 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 42 35% 96%;
+    --foreground: 29 27% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 37% 98%;
+    --card-foreground: 29 27% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 37% 98%;
+    --popover-foreground: 29 27% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 151 34% 22%;
+    --primary-foreground: 42 35% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 32 35% 83%;
+    --secondary-foreground: 29 27% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 28% 89%;
+    --muted-foreground: 30 12% 42%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 18 54% 45%;
+    --accent-foreground: 42 35% 96%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 33 24% 78%;
+    --input: 33 24% 78%;
+    --ring: 18 54% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
+    --wood: 28 42% 32%;
+    --wood-foreground: 42 35% 96%;
+    --stone: 36 18% 54%;
+    --steel: 199 16% 31%;
+    --cream: 42 35% 96%;
+    --cream-foreground: 29 27% 15%;
+    --hero-overlay: 29 34% 8%;
+    --gradient-hero: linear-gradient(90deg, hsl(var(--hero-overlay) / 0.88), hsl(var(--hero-overlay) / 0.52), hsl(var(--hero-overlay) / 0.14));
+    --gradient-panel: linear-gradient(135deg, hsl(var(--card)), hsl(var(--secondary) / 0.62));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--steel)));
+    --shadow-crafted: 0 24px 70px -36px hsl(var(--wood) / 0.55);
+    --shadow-soft: 0 18px 45px -28px hsl(var(--foreground) / 0.35);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +112,31 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, ui-serif, serif;
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .craft-grain {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.075) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  .reveal-up {
+    animation: reveal-up 720ms cubic-bezier(0.2, 0.9, 0.2, 1) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-up {
+      animation: none;
+    }
   }
 }
