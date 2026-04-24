@@ -136,12 +136,13 @@ const Index = () => {
 
       <section className="bg-panel-gradient py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+          <div className="mx-auto max-w-4xl py-20 text-center">
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">Service area</p>
-              <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Serving greater Boston, Cambridge, and the North Shore.</h2>
+              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">Service area</p>
+              <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Serving greater Boston, Cambridge, and the North Shore.</h2>
             </div>
-            <div className="flex flex-wrap gap-3">
+            <div className="mx-auto my-8 h-px w-24 bg-border" />
+            <div className="flex flex-wrap justify-center gap-3">
               {areas.map((area) => (
                 <span key={area} className="inline-flex items-center gap-2 border border-border bg-card/80 px-4 py-3 text-sm font-semibold shadow-soft">
                   <MapPin className="h-4 w-4 text-accent" /> {area}
@@ -154,10 +155,11 @@ const Index = () => {
 
       <section id="contact" className="bg-primary py-20 text-primary-foreground sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground/70">Get in touch</p>
-            <h2 className="text-4xl font-semibold leading-tight sm:text-6xl">Ready to talk through your next renovation?</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-primary-foreground/82">
+          <div className="py-20 text-center">
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground/70">Get in touch</p>
+            <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px] lg:text-6xl">Ready to talk through your next renovation?</h2>
+            <div className="mx-auto my-8 h-px w-24 bg-primary-foreground/25" />
+            <p className="mx-auto max-w-2xl text-lg leading-8 text-primary-foreground/82">
               Share what you want to build, remodel, renovate, or restore, and start the conversation with Labbe Build + Remodel.
             </p>
           </div>
