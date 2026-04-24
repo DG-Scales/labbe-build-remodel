@@ -58,10 +58,10 @@ const Index = () => {
             </p>
             <div className="relative min-h-[11rem] sm:min-h-[15rem] lg:min-h-[16rem]">
               <h1 className="hero-crossfade-out absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground sm:text-5xl lg:text-6xl text-7xl">
-                Soak in the<br />comfort of your<br />new space
+                Soak In The<br />Comfort Of Your<br />New Space
               </h1>
               <h1 className="hero-crossfade absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground opacity-0 sm:text-5xl lg:text-6xl text-7xl">
-                Quality You<br />Can See Results<br />That Last
+                Quality You<br />Can See. Results<br />That Last.
               </h1>
             </div>
             <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
