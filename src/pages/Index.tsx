@@ -51,23 +51,24 @@ const Index = () => {
           </div>
         </nav>
 
-        <div id="top" className="relative z-10 mx-auto flex max-w-7xl flex-col justify-end px-5 pb-16 pt-24 sm:px-8 lg:min-h-[76vh] lg:pb-24">
-          <div className="max-w-3xl reveal-up">
-            <p className="mb-5 inline-flex items-center gap-2 border-l-4 border-accent bg-card/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
+        <div id="top" className="relative z-10 mx-auto flex max-w-7xl flex-col justify-end px-5 py-20 sm:px-8 lg:min-h-[76vh] lg:py-24">
+          <div className="mx-auto max-w-4xl text-center reveal-up">
+            <p className="mb-7 inline-flex items-center justify-center gap-2 bg-card/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
-            <div className="relative min-h-[11rem] sm:min-h-[15rem] lg:min-h-[16rem]">
-              <h1 className="hero-crossfade-out absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground sm:text-5xl lg:text-6xl text-7xl">
+            <div className="relative mx-auto min-h-[13rem] max-w-4xl sm:min-h-[17rem] lg:min-h-[18rem]">
+              <h1 className="hero-crossfade-out absolute inset-0 mx-auto max-w-4xl text-4xl font-semibold leading-[1.15] text-primary-foreground sm:text-[52px] lg:text-7xl">
                 Soak in the<br />comfort of your<br />new space
               </h1>
-              <h1 className="hero-crossfade absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground opacity-0 sm:text-5xl lg:text-6xl text-7xl">
+              <h1 className="hero-crossfade absolute inset-0 mx-auto max-w-4xl text-4xl font-semibold leading-[1.15] text-primary-foreground opacity-0 sm:text-[52px] lg:text-7xl">
                 Quality You<br />Can See Results<br />That Last
               </h1>
             </div>
-            <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
+            <div className="mx-auto mt-8 h-px w-24 bg-primary-foreground/35" />
+            <p className="mx-auto mt-8 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
               Labbe Build + Remodel builds, remodels, renovates, and restores homes across greater Boston, Cambridge, and the North Shore.
             </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
               <Button asChild variant="hero" size="xl">
                 <a href="tel:6179539498">Call (617) 953-9498 <Phone /></a>
               </Button>
