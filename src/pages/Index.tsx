@@ -85,12 +85,13 @@ const Index = () => {
 
       <section id="services" className="relative border-y border-border bg-card py-20 craft-grain sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div className="mx-auto max-w-4xl py-20 text-center">
             <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">Build · Remodel · Renovate · Restore</p>
-              <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Detailed work for the spaces that make a house feel like home.</h2>
+              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">Build · Remodel · Renovate · Restore</p>
+              <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Detailed work for the spaces that make a house feel like home.</h2>
             </div>
-            <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
+            <div className="mx-auto my-8 h-px w-24 bg-border" />
+            <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
               From full interior renovations to exterior upgrades and custom carpentry, LBR brings steady project management, quality materials, and precise finish work to every home improvement project.
             </p>
           </div>
@@ -108,10 +109,11 @@ const Index = () => {
 
       <section id="about" className="bg-background py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <div className="sticky top-8">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">About us</p>
-            <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Locally owned, carefully operated, and built around trust.</h2>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+          <div className="py-20 text-center lg:sticky lg:top-8">
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">About us</p>
+            <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Locally owned, carefully operated, and built around trust.</h2>
+            <div className="mx-auto my-8 h-px w-24 bg-border" />
+            <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
               Labbe Build + Remodel is a locally owned and operated home improvement company specializing in all areas of home renovation throughout Massachusetts.
             </p>
           </div>
