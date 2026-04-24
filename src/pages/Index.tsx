@@ -51,24 +51,23 @@ const Index = () => {
           </div>
         </nav>
 
-        <div id="top" className="relative z-10 mx-auto flex max-w-7xl flex-col justify-end px-5 py-20 sm:px-8 lg:min-h-[76vh] lg:py-24">
-          <div className="mx-auto max-w-4xl text-center reveal-up">
-            <p className="mb-7 inline-flex items-center justify-center gap-2 bg-card/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
+        <div id="top" className="relative z-10 mx-auto flex max-w-7xl flex-col justify-end px-5 pb-16 pt-24 sm:px-8 lg:min-h-[76vh] lg:pb-24">
+          <div className="max-w-3xl reveal-up">
+            <p className="mb-5 inline-flex items-center gap-2 border-l-4 border-accent bg-card/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground backdrop-blur">
               <ShieldCheck className="h-4 w-4" /> Massachusetts home improvement
             </p>
-            <div className="relative mx-auto min-h-[13rem] max-w-4xl sm:min-h-[17rem] lg:min-h-[18rem]">
-              <h1 className="hero-crossfade-out absolute inset-0 mx-auto max-w-4xl text-4xl font-semibold leading-[1.15] text-primary-foreground sm:text-[52px] lg:text-7xl">
+            <div className="relative min-h-[11rem] sm:min-h-[15rem] lg:min-h-[16rem]">
+              <h1 className="hero-crossfade-out absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground sm:text-5xl lg:text-6xl text-7xl">
                 Soak in the<br />comfort of your<br />new space
               </h1>
-              <h1 className="hero-crossfade absolute inset-0 mx-auto max-w-4xl text-4xl font-semibold leading-[1.15] text-primary-foreground opacity-0 sm:text-[52px] lg:text-7xl">
+              <h1 className="hero-crossfade absolute inset-0 max-w-3xl font-semibold leading-tight text-primary-foreground opacity-0 sm:text-5xl lg:text-6xl text-7xl">
                 Quality You<br />Can See Results<br />That Last
               </h1>
             </div>
-            <div className="mx-auto mt-8 h-px w-24 bg-primary-foreground/35" />
-            <p className="mx-auto mt-8 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
+            <p className="mt-7 max-w-2xl text-lg font-semibold leading-8 text-primary-foreground drop-shadow-lg sm:text-xl">
               Labbe Build + Remodel builds, remodels, renovates, and restores homes across greater Boston, Cambridge, and the North Shore.
             </p>
-            <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild variant="hero" size="xl">
                 <a href="tel:6179539498">Call (617) 953-9498 <Phone /></a>
               </Button>
@@ -85,13 +84,12 @@ const Index = () => {
 
       <section id="services" className="relative border-y border-border bg-card py-20 craft-grain sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="mx-auto max-w-4xl py-20 text-center">
+          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">Build · Remodel · Renovate · Restore</p>
-              <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Detailed work for the spaces that make a house feel like home.</h2>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">Build · Remodel · Renovate · Restore</p>
+              <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Detailed work for the spaces that make a house feel like home.</h2>
             </div>
-            <div className="mx-auto my-8 h-px w-24 bg-border" />
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
+            <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
               From full interior renovations to exterior upgrades and custom carpentry, LBR brings steady project management, quality materials, and precise finish work to every home improvement project.
             </p>
           </div>
@@ -109,11 +107,10 @@ const Index = () => {
 
       <section id="about" className="bg-background py-20 sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <div className="py-20 text-center lg:sticky lg:top-8">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">About us</p>
-            <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Locally owned, carefully operated, and built around trust.</h2>
-            <div className="mx-auto my-8 h-px w-24 bg-border" />
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-muted-foreground">
+          <div className="sticky top-8">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">About us</p>
+            <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Locally owned, carefully operated, and built around trust.</h2>
+            <p className="mt-6 text-lg leading-8 text-muted-foreground">
               Labbe Build + Remodel is a locally owned and operated home improvement company specializing in all areas of home renovation throughout Massachusetts.
             </p>
           </div>
@@ -136,13 +133,12 @@ const Index = () => {
 
       <section className="bg-panel-gradient py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="mx-auto max-w-4xl py-20 text-center">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
             <div>
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-accent">Service area</p>
-              <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px]">Serving greater Boston, Cambridge, and the North Shore.</h2>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-accent">Service area</p>
+              <h2 className="text-4xl font-semibold leading-tight sm:text-5xl">Serving greater Boston, Cambridge, and the North Shore.</h2>
             </div>
-            <div className="mx-auto my-8 h-px w-24 bg-border" />
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap gap-3">
               {areas.map((area) => (
                 <span key={area} className="inline-flex items-center gap-2 border border-border bg-card/80 px-4 py-3 text-sm font-semibold shadow-soft">
                   <MapPin className="h-4 w-4 text-accent" /> {area}
@@ -155,11 +151,10 @@ const Index = () => {
 
       <section id="contact" className="bg-primary py-20 text-primary-foreground sm:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div className="py-20 text-center">
-            <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground/70">Get in touch</p>
-            <h2 className="text-4xl font-semibold leading-[1.15] sm:text-[52px] lg:text-6xl">Ready to talk through your next renovation?</h2>
-            <div className="mx-auto my-8 h-px w-24 bg-primary-foreground/25" />
-            <p className="mx-auto max-w-2xl text-lg leading-8 text-primary-foreground/82">
+          <div>
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-primary-foreground/70">Get in touch</p>
+            <h2 className="text-4xl font-semibold leading-tight sm:text-6xl">Ready to talk through your next renovation?</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-primary-foreground/82">
               Share what you want to build, remodel, renovate, or restore, and start the conversation with Labbe Build + Remodel.
             </p>
           </div>
