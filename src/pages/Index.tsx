@@ -40,9 +40,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white p-1 shadow-crafted">
-              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
-            </span>
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 object-contain invert" />
+          </a>
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
@@ -192,9 +191,7 @@ const Index = () => {
             </div>
             <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
               <div className="mb-6 flex items-center gap-3">
-                <span className="flex h-14 w-14 items-center justify-center rounded-md bg-white p-1.5">
-                  <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
-                </span>
+                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-14 w-14 object-contain invert" />
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
                   <div className="text-lg font-semibold">Build · Remodel · Restore</div>

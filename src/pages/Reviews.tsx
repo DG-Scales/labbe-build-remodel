@@ -40,9 +40,7 @@ const Reviews = () => {
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <Link to="/" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white p-1 shadow-soft">
-              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
-            </span>
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 object-contain invert" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-foreground sm:inline">TMD Remodeling</span>
           </Link>
           <Button asChild variant="subtle">
