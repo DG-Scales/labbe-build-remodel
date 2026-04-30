@@ -8,29 +8,29 @@ const reviewLinks = [
     title: "Google",
     text: "A 5-star Google review helps homeowners find a remodeler they can trust.",
     href: "https://www.google.com/search?q=TMD+Remodeling+review",
-    label: "Leave 5 stars",
+    label: "Leave A 5-Star Review",
     icon: Star,
   },
   {
     title: "Facebook",
     text: "Follow along for project photos, before/afters, and updates from the crew.",
     href: "https://facebook.com/",
-    label: "Follow on Facebook",
+    label: "Follow On Facebook",
     icon: Facebook,
   },
   {
     title: "Referral",
     text: "Know someone planning a renovation? A quick intro means the world.",
     href: "mailto:devanx08@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
-    label: "Email a referral",
+    label: "Email A Referral",
     icon: Mail,
   },
 ];
 
 const steps = [
-  { n: "01", title: "Click a button", text: "Pick Google, Facebook, or email below." },
-  { n: "02", title: "Leave 5 stars", text: "Share a sentence about your experience." },
-  { n: "03", title: "Hit submit", text: "That's it — thank you for the support." },
+  { n: "01", title: "Click A Button", text: "Pick Google, Facebook, or email below." },
+  { n: "02", title: "Leave A 5-Star Review", text: "Share a sentence about your experience." },
+  { n: "03", title: "Hit Submit", text: "That's it — thank you for the support." },
 ];
 
 const Reviews = () => {
@@ -40,7 +40,7 @@ const Reviews = () => {
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <Link to="/" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 object-contain invert" />
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-16 object-contain invert sm:h-20 sm:w-20" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-foreground sm:inline">TMD Remodeling</span>
           </Link>
           <Button asChild variant="subtle">
@@ -59,7 +59,7 @@ const Reviews = () => {
               <span className="ml-2 text-xs font-bold uppercase tracking-[0.2em]">Leave us 5 stars</span>
             </div>
             <h1 className="text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-              Loved the work?<br /><span className="text-accent">Tell the world.</span>
+              Loved The Work?<br /><span className="text-accent">Tell The World.</span>
             </h1>
             <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
               If TMD Remodeling brought care, craftsmanship, and clear communication to your project — a 5-star review or follow helps the next homeowner reach out with confidence.
@@ -90,7 +90,7 @@ const Reviews = () => {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Where to leave it</p>
-            <h2 className="text-4xl font-bold sm:text-5xl">Pick your platform</h2>
+            <h2 className="text-4xl font-bold sm:text-5xl">Pick Your Platform</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
             {reviewLinks.map((item) => (
