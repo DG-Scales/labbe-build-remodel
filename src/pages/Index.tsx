@@ -40,9 +40,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white p-1 shadow-crafted">
-              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
-            </span>
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 object-contain invert" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
@@ -71,7 +69,7 @@ const Index = () => {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild variant="hero" size="xl">
-                <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
+                <a href="tel:8574885197">Call (857) 488-5197 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <a href="mailto:devanx08@gmail.com">Email Us <Mail /></a>
@@ -88,10 +86,10 @@ const Index = () => {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-border sm:grid-cols-4">
           {[
-            { k: "15+", v: "Years experience" },
             { k: "200+", v: "Projects completed" },
-            { k: "9", v: "Towns served" },
+            { k: "10+", v: "Towns served" },
             { k: "5★", v: "Average rating" },
+            { k: "100%", v: "Licensed & insured" },
           ].map((s) => (
             <div key={s.v} className="bg-card px-6 py-8 text-center">
               <div className="text-4xl font-bold text-accent sm:text-5xl">{s.k}</div>
@@ -192,9 +190,7 @@ const Index = () => {
             </div>
             <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
               <div className="mb-6 flex items-center gap-3">
-                <span className="flex h-14 w-14 items-center justify-center rounded-md bg-white p-1.5">
-                  <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
-                </span>
+                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-14 w-14 object-contain invert" />
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
                   <div className="text-lg font-semibold">Build · Remodel · Restore</div>
@@ -202,7 +198,7 @@ const Index = () => {
               </div>
               <div className="space-y-3">
                 <Button asChild variant="hero" size="xl" className="w-full justify-between">
-                  <a href="tel:6174802895">(617) 480-2895 <Phone /></a>
+                  <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                   <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
