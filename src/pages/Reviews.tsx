@@ -1,85 +1,107 @@
-import { ArrowLeft, Facebook, Mail, MessageSquareHeart, Phone, Star } from "lucide-react";
+import { ArrowLeft, Facebook, Mail, MessageSquareHeart, Phone, Quote, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import tmdLogo from "@/assets/tmd/tmd-logo.jpg";
+import tmdLogo from "@/assets/tmd/tmd-logo.png";
 
 const reviewLinks = [
   {
-    title: "Leave a 5-star Google review",
-    text: "If we earned your trust, a 5-star review and a few kind words help other homeowners find a remodeler they can rely on.",
+    title: "Google",
+    text: "A 5-star Google review helps homeowners find a remodeler they can trust.",
     href: "https://www.google.com/search?q=TMD+Remodeling+review",
     label: "Leave 5 stars",
     icon: Star,
   },
   {
-    title: "Follow us on Facebook",
-    text: "See project photos, before/afters, and updates from the TMD Remodeling crew.",
+    title: "Facebook",
+    text: "Follow along for project photos, before/afters, and updates from the crew.",
     href: "https://facebook.com/",
     label: "Follow on Facebook",
     icon: Facebook,
   },
   {
-    title: "Send a referral",
-    text: "Know someone planning a renovation? A quick introduction means the world to a small local business.",
+    title: "Referral",
+    text: "Know someone planning a renovation? A quick intro means the world.",
     href: "mailto:devanx08@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
     label: "Email a referral",
     icon: Mail,
   },
 ];
 
+const steps = [
+  { n: "01", title: "Click a button", text: "Pick Google, Facebook, or email below." },
+  { n: "02", title: "Leave 5 stars", text: "Share a sentence about your experience." },
+  { n: "03", title: "Hit submit", text: "That's it — thank you for the support." },
+];
+
 const Reviews = () => {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <section className="relative overflow-hidden border-b border-border bg-panel-gradient">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
+      {/* Header */}
+      <nav className="border-b border-border bg-card">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <Link to="/" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 rounded-md object-cover" />
+            <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white p-1 shadow-soft">
+              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
+            </span>
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-foreground sm:inline">TMD Remodeling</span>
           </Link>
           <Button asChild variant="subtle">
-            <Link to="/"><ArrowLeft /> Home</Link>
+            <Link to="/"><ArrowLeft /> Back home</Link>
           </Button>
-        </nav>
+        </div>
+      </nav>
 
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-10 sm:px-8 sm:pb-28 lg:grid-cols-[1fr_0.85fr] lg:items-center">
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-panel-gradient">
+        <div className="craft-grain absolute inset-0 opacity-40" />
+        <div className="relative mx-auto max-w-4xl px-5 py-24 text-center sm:px-8 sm:py-32">
           <div className="reveal-up">
-            <p className="mb-4 inline-flex items-center gap-2 border-l-4 border-accent bg-accent/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.22em] text-accent shadow-soft">
-              <MessageSquareHeart className="h-4 w-4" /> Share good intentions
-            </p>
-            <h1 className="max-w-4xl text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
-              Loved the work? Leave us 5 stars.
+            <div className="mb-6 inline-flex items-center gap-1 rounded-full border border-accent/30 bg-accent/10 px-4 py-2 text-accent">
+              {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-accent" />)}
+              <span className="ml-2 text-xs font-bold uppercase tracking-[0.2em]">Leave us 5 stars</span>
+            </div>
+            <h1 className="text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
+              Loved the work?<br /><span className="text-accent">Tell the world.</span>
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-              If TMD Remodeling brought care, craftsmanship, and clear communication to your project, a 5-star review or follow helps the next homeowner feel confident reaching out.
+            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+              If TMD Remodeling brought care, craftsmanship, and clear communication to your project — a 5-star review or follow helps the next homeowner reach out with confidence.
             </p>
-            <div className="mt-6 flex items-center gap-1 text-accent">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-7 w-7 fill-accent" />
-              ))}
-              <span className="ml-3 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">5-star service, 5-star reviews</span>
-            </div>
-          </div>
-
-          <div className="rounded-lg border border-border bg-card p-7 shadow-crafted">
-            <div className="flex items-start gap-4">
-              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-20 w-20 rounded-md object-cover" />
-              <div>
-                <h2 className="text-3xl font-semibold">Thank you for the support.</h2>
-                <p className="mt-3 leading-7 text-muted-foreground">A 5-star review, follow, or referral is one of the most meaningful ways to support local craftsmanship.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 sm:py-24">
+      {/* 3-step strip */}
+      <section className="border-y border-border bg-background py-16">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="grid gap-8 md:grid-cols-3">
+            {steps.map((s) => (
+              <div key={s.n} className="flex gap-5">
+                <div className="font-mono text-4xl font-bold text-accent/80">{s.n}</div>
+                <div>
+                  <h3 className="text-xl font-semibold">{s.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{s.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Review platforms */}
+      <section className="bg-card py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="mb-12 text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Where to leave it</p>
+            <h2 className="text-4xl font-bold sm:text-5xl">Pick your platform</h2>
+          </div>
           <div className="grid gap-5 md:grid-cols-3">
             {reviewLinks.map((item) => (
-              <article key={item.title} className="rounded-lg border border-border bg-card p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-crafted">
-                <item.icon className="mb-6 h-9 w-9 text-accent" />
-                <h2 className="text-3xl font-semibold">{item.title}</h2>
-                <p className="mt-4 min-h-28 leading-7 text-muted-foreground">{item.text}</p>
+              <article key={item.title} className="group flex flex-col rounded-lg border border-border bg-background p-8 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-crafted">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-md border border-border bg-card text-accent transition group-hover:border-accent">
+                  <item.icon className="h-7 w-7" />
+                </div>
+                <h2 className="text-2xl font-semibold">{item.title}</h2>
+                <p className="mt-3 flex-grow leading-7 text-muted-foreground">{item.text}</p>
                 <Button asChild variant="hero" size="lg" className="mt-6 w-full justify-between">
                   <a href={item.href} target={item.href.startsWith("http") ? "_blank" : undefined} rel={item.href.startsWith("http") ? "noreferrer" : undefined}>
                     {item.label} <item.icon />
@@ -88,23 +110,34 @@ const Reviews = () => {
               </article>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 rounded-lg border border-border bg-primary p-8 text-primary-foreground shadow-crafted sm:p-10">
-            <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr] lg:items-center">
-              <div>
-                <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Prefer to share directly?</h2>
-                <p className="mt-4 max-w-2xl text-lg leading-8 text-primary-foreground/80">
-                  Call or email TMD with a kind note, project photo, or referral introduction.
-                </p>
+      {/* Thank-you / direct contact */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="grid overflow-hidden rounded-lg border border-border bg-primary text-primary-foreground shadow-crafted lg:grid-cols-[1.1fr_0.9fr]">
+            <div className="p-10 sm:p-12">
+              <Quote className="h-10 w-10 text-accent" />
+              <h2 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl">Prefer to share directly?</h2>
+              <p className="mt-5 max-w-xl text-lg leading-8 text-primary-foreground/80">
+                Call or email TMD with a kind note, project photo, or a referral introduction. Every word matters to a small local business.
+              </p>
+              <div className="mt-6 flex items-center gap-2 text-accent">
+                <MessageSquareHeart className="h-5 w-5" />
+                <span className="text-sm font-semibold uppercase tracking-[0.18em]">Thank you for the support</span>
               </div>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-                <Button asChild variant="hero" size="xl" className="justify-between">
-                  <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
-                </Button>
-                <Button asChild variant="subtle" size="xl" className="justify-between">
-                  <a href="mailto:devanx08@gmail.com">Email TMD <Mail /></a>
-                </Button>
-              </div>
+            </div>
+            <div className="space-y-3 border-t border-primary-foreground/15 bg-primary-foreground/5 p-10 backdrop-blur sm:p-12 lg:border-l lg:border-t-0">
+              <Button asChild variant="hero" size="xl" className="w-full justify-between">
+                <a href="tel:6174802895">(617) 480-2895 <Phone /></a>
+              </Button>
+              <Button asChild variant="subtle" size="xl" className="w-full justify-between">
+                <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+              </Button>
+              <Button asChild variant="subtle" size="xl" className="w-full justify-between">
+                <Link to="/">Back to home <ArrowLeft className="rotate-180" /></Link>
+              </Button>
             </div>
           </div>
         </div>
