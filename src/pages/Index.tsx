@@ -182,7 +182,7 @@ const Index = () => {
           <div className="grid overflow-hidden rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 shadow-crafted backdrop-blur lg:grid-cols-2">
             <div className="p-10 sm:p-12">
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Get in touch</p>
-              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Let's talk about your next project.</h2>
+              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Let's Talk About Your Next Project.</h2>
               <p className="mt-6 text-lg leading-8 text-primary-foreground/82">
                 Tell us what you want to build, remodel, or restore. We'll walk through it with you and put together an honest plan.
               </p>
