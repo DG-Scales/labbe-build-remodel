@@ -117,7 +117,7 @@ const Reviews = () => {
           <div className="grid overflow-hidden rounded-lg border border-border bg-primary text-primary-foreground shadow-crafted lg:grid-cols-[1.1fr_0.9fr]">
             <div className="p-10 sm:p-12">
               <Quote className="h-10 w-10 text-accent" />
-              <h2 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl">Prefer to share directly?</h2>
+              <h2 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl">Prefer To Share Directly?</h2>
               <p className="mt-5 max-w-xl text-lg leading-8 text-primary-foreground/80">
                 Call or email TMD with a kind note, project photo, or a referral introduction. Every word matters to a small local business.
               </p>
