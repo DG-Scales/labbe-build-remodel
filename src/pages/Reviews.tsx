@@ -44,7 +44,7 @@ const Reviews = () => {
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-foreground sm:inline">TMD Remodeling</span>
           </Link>
           <Button asChild variant="subtle">
-            <Link to="/"><ArrowLeft /> Back home</Link>
+            <Link to="/"><ArrowLeft /> Back Home</Link>
           </Button>
         </div>
       </nav>
