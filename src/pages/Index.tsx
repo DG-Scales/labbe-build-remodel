@@ -9,10 +9,10 @@ import carpentryImage from "@/assets/tmd/carpentry.jpg";
 import tmdLogo from "@/assets/tmd/tmd-logo.png";
 
 const services = [
-  { icon: Home, title: "Whole-home remodels", text: "End-to-end renovations that modernize layouts, finishes, and the way you use your space." },
-  { icon: Bath, title: "Kitchens & bathrooms", text: "Sleek, functional updates with premium materials, smart layouts, and clean finish work." },
-  { icon: Ruler, title: "Additions & restorations", text: "Expand your footprint or restore character with careful planning and quality construction." },
-  { icon: Hammer, title: "Custom carpentry", text: "Built-ins, trim, doors, and detail work crafted to fit your home perfectly." },
+  { icon: Home, title: "Whole-Home Remodels", text: "End-to-end renovations that modernize layouts, finishes, and the way you use your space." },
+  { icon: Bath, title: "Kitchens & Bathrooms", text: "Sleek, functional updates with premium materials, smart layouts, and clean finish work." },
+  { icon: Ruler, title: "Additions & Restorations", text: "Expand your footprint or restore character with careful planning and quality construction." },
+  { icon: Hammer, title: "Custom Carpentry", text: "Built-ins, trim, doors, and detail work crafted to fit your home perfectly." },
 ];
 
 const values = [
@@ -107,7 +107,7 @@ const Index = () => {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-14 max-w-2xl">
             <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">What we do</p>
-            <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Remodeling done right, start to finish.</h2>
+            <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Remodeling Done Right, Start To Finish.</h2>
           </div>
           <div className="grid gap-px bg-border md:grid-cols-2">
             {services.map((service, i) => (
@@ -141,7 +141,7 @@ const Index = () => {
             </div>
             <div>
               <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">About TMD</p>
-              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Local crew. High standards. Built around trust.</h2>
+              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Local Crew. High Standards. Built Around Trust.</h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
                 TMD Remodeling is a locally owned home improvement company serving the North Shore and greater Boston. Modern design, durable construction, and a smooth experience from quote to keys.
               </p>
@@ -165,7 +165,7 @@ const Index = () => {
       <section className="bg-background py-20 sm:py-24">
         <div className="mx-auto max-w-5xl px-5 text-center sm:px-8">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Where we work</p>
-          <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Serving the North Shore & greater Boston</h2>
+          <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Serving The North Shore & Greater Boston</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {areas.map((area) => (
               <span key={area} className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold transition hover:border-accent hover:text-accent">
