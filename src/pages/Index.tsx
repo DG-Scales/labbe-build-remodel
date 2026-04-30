@@ -40,7 +40,9 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-12 w-12 rounded-md object-cover shadow-crafted" />
+            <span className="flex h-12 w-12 items-center justify-center rounded-md bg-white p-1 shadow-crafted">
+              <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
+            </span>
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
@@ -82,48 +84,42 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="relative border-y border-border bg-card py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Build · Remodel · Restore</p>
-              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Modern remodeling for the way you actually live.</h2>
+      {/* Stats strip */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-border sm:grid-cols-4">
+          {[
+            { k: "15+", v: "Years experience" },
+            { k: "200+", v: "Projects completed" },
+            { k: "9", v: "Towns served" },
+            { k: "5★", v: "Average rating" },
+          ].map((s) => (
+            <div key={s.v} className="bg-card px-6 py-8 text-center">
+              <div className="text-4xl font-bold text-accent sm:text-5xl">{s.k}</div>
+              <div className="mt-2 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">{s.v}</div>
             </div>
-            <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
-              From full interior renovations to custom carpentry, TMD brings clean project management, premium materials, and precise finish work to every job.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((service) => (
-              <article key={service.title} className="group rounded-lg border border-border bg-background/80 p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-accent/60 hover:shadow-crafted">
-                <service.icon className="mb-6 h-8 w-8 text-accent transition group-hover:scale-110" />
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
-                <p className="mt-4 leading-7 text-muted-foreground">{service.text}</p>
-              </article>
-            ))}
-          </div>
+          ))}
         </div>
       </section>
 
-      <section id="about" className="bg-background py-20 sm:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <div className="sticky top-8">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">About TMD</p>
-            <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Local crew. High standards. Built around trust.</h2>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              TMD Remodeling is a locally owned home improvement company serving the North Shore and greater Boston. We focus on modern design, durable construction, and a smooth experience from quote to keys.
-            </p>
+      {/* Services - clean numbered list */}
+      <section id="services" className="bg-background py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="mb-14 max-w-2xl">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">What we do</p>
+            <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Remodeling done right, start to finish.</h2>
           </div>
-          <div className="grid gap-5">
-            {values.map((value, index) => (
-              <article key={value.title} className="grid overflow-hidden rounded-lg border border-border bg-card shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-crafted sm:grid-cols-[220px_1fr]" style={{ animationDelay: `${index * 110}ms` }}>
-                <img src={value.image} alt={`${value.title} remodeling example`} className="h-64 w-full object-cover sm:h-full" loading="lazy" />
-                <div className="p-7 sm:p-8">
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-accent/15 text-accent">
-                    <Sparkles className="h-5 w-5" />
+          <div className="grid gap-px bg-border md:grid-cols-2">
+            {services.map((service, i) => (
+              <article key={service.title} className="group flex gap-6 bg-background p-8 transition hover:bg-card">
+                <div className="flex-shrink-0">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-md border border-border bg-card text-accent transition group-hover:border-accent">
+                    <service.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-3xl font-semibold">{value.title}</h3>
-                  <p className="mt-4 leading-8 text-muted-foreground">{value.text}</p>
+                  <div className="mt-3 text-center font-mono text-xs text-muted-foreground">0{i + 1}</div>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">{service.title}</h3>
+                  <p className="mt-3 leading-7 text-muted-foreground">{service.text}</p>
                 </div>
               </article>
             ))}
@@ -131,46 +127,95 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="bg-panel-gradient py-20 sm:py-24">
+      {/* About + Values - asymmetric image grid */}
+      <section id="about" className="bg-card py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
-            <div>
-              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Service area</p>
-              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Serving the North Shore & greater Boston.</h2>
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="grid grid-cols-2 gap-4">
+              <img src={bathroomImage} alt="Bathroom remodel" className="aspect-[3/4] w-full rounded-lg object-cover shadow-crafted" loading="lazy" />
+              <div className="grid gap-4 pt-10">
+                <img src={livingRoom} alt="Living room remodel" className="aspect-square w-full rounded-lg object-cover shadow-soft" loading="lazy" />
+                <img src={carpentryImage} alt="Custom carpentry" className="aspect-square w-full rounded-lg object-cover shadow-soft" loading="lazy" />
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              {areas.map((area) => (
-                <span key={area} className="inline-flex items-center gap-2 rounded-md border border-border bg-card/80 px-4 py-3 text-sm font-semibold shadow-soft">
-                  <MapPin className="h-4 w-4 text-accent" /> {area}
-                </span>
-              ))}
+            <div>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">About TMD</p>
+              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Local crew. High standards. Built around trust.</h2>
+              <p className="mt-6 text-lg leading-8 text-muted-foreground">
+                TMD Remodeling is a locally owned home improvement company serving the North Shore and greater Boston. Modern design, durable construction, and a smooth experience from quote to keys.
+              </p>
+              <ul className="mt-8 space-y-4">
+                {values.map((v) => (
+                  <li key={v.title} className="flex gap-4">
+                    <Check className="mt-1 h-5 w-5 flex-shrink-0 text-accent" />
+                    <div>
+                      <div className="font-semibold">{v.title}</div>
+                      <p className="mt-1 text-muted-foreground">{v.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="bg-primary py-20 text-primary-foreground sm:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_0.8fr] lg:items-center">
-          <div>
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Get in touch</p>
-            <h2 className="text-4xl font-bold leading-tight sm:text-6xl">Ready to talk about your next project?</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-primary-foreground/82">
-              Tell us what you want to build, remodel, or restore. We'll walk through it with you and put together an honest plan.
-            </p>
+      {/* Service area - simple map-style chips */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl px-5 text-center sm:px-8">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Where we work</p>
+          <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Serving the North Shore & greater Boston</h2>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            {areas.map((area) => (
+              <span key={area} className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 text-sm font-semibold transition hover:border-accent hover:text-accent">
+                <MapPin className="h-4 w-4 text-accent" /> {area}
+              </span>
+            ))}
           </div>
-          <div className="rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 p-7 shadow-crafted backdrop-blur">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="mb-7 h-20 w-20 rounded-md object-cover" loading="lazy" />
-            <div className="space-y-4">
-              <Button asChild variant="hero" size="xl" className="w-full justify-between">
-                <a href="tel:6174802895">(617) 480-2895 <Phone /></a>
-              </Button>
-              <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <ArrowRight /></a>
-              </Button>
-              <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                <Link to="/reviews">Leave us a review <Facebook /></Link>
-              </Button>
+        </div>
+      </section>
+
+      {/* Contact - split panel */}
+      <section id="contact" className="bg-primary py-20 text-primary-foreground sm:py-28">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <div className="grid overflow-hidden rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 shadow-crafted backdrop-blur lg:grid-cols-2">
+            <div className="p-10 sm:p-12">
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Get in touch</p>
+              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Let's talk about your next project.</h2>
+              <p className="mt-6 text-lg leading-8 text-primary-foreground/82">
+                Tell us what you want to build, remodel, or restore. We'll walk through it with you and put together an honest plan.
+              </p>
+              <div className="mt-8 flex items-center gap-1 text-accent">
+                {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 fill-accent" />)}
+                <span className="ml-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/70">5-star rated</span>
+              </div>
             </div>
+            <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
+              <div className="mb-6 flex items-center gap-3">
+                <span className="flex h-14 w-14 items-center justify-center rounded-md bg-white p-1.5">
+                  <img src={tmdLogo} alt="TMD Remodeling logo" className="h-full w-full object-contain" />
+                </span>
+                <div>
+                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
+                  <div className="text-lg font-semibold">Build · Remodel · Restore</div>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <Button asChild variant="hero" size="xl" className="w-full justify-between">
+                  <a href="tel:6174802895">(617) 480-2895 <Phone /></a>
+                </Button>
+                <Button asChild variant="subtle" size="xl" className="w-full justify-between">
+                  <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+                </Button>
+                <Button asChild variant="subtle" size="xl" className="w-full justify-between">
+                  <Link to="/reviews">Leave a 5-star review <MessageSquareHeart /></Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/15 pt-8 text-sm text-primary-foreground/60 sm:flex-row">
+            <div>© {new Date().getFullYear()} TMD Remodeling. All rights reserved.</div>
+            <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Licensed & insured · Massachusetts</div>
           </div>
         </div>
       </section>
