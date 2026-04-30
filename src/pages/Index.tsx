@@ -1,4 +1,4 @@
-import { ArrowRight, Bath, Hammer, Home, Mail, MapPin, MessageSquareHeart, Phone, Ruler, ShieldCheck, Sparkles, Facebook } from "lucide-react";
+import { ArrowRight, Bath, Check, Hammer, Home, Mail, MapPin, MessageSquareHeart, Phone, Ruler, ShieldCheck, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroHome from "@/assets/tmd/hero-home.jpg";
@@ -6,7 +6,7 @@ import modernKitchen from "@/assets/tmd/modern-kitchen.jpg";
 import bathroomImage from "@/assets/tmd/bathroom.jpg";
 import livingRoom from "@/assets/tmd/living-room.jpg";
 import carpentryImage from "@/assets/tmd/carpentry.jpg";
-import tmdLogo from "@/assets/tmd/tmd-logo.jpg";
+import tmdLogo from "@/assets/tmd/tmd-logo.png";
 
 const services = [
   { icon: Home, title: "Whole-home remodels", text: "End-to-end renovations that modernize layouts, finishes, and the way you use your space." },
