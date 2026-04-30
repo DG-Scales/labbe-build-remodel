@@ -71,7 +71,7 @@ const Index = () => {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild variant="hero" size="xl">
-                <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
+                <a href="tel:8574885197">Call (857) 488-5197 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <a href="mailto:devanx08@gmail.com">Email Us <Mail /></a>
@@ -88,10 +88,10 @@ const Index = () => {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-px bg-border sm:grid-cols-4">
           {[
-            { k: "15+", v: "Years experience" },
             { k: "200+", v: "Projects completed" },
-            { k: "9", v: "Towns served" },
+            { k: "10+", v: "Towns served" },
             { k: "5★", v: "Average rating" },
+            { k: "100%", v: "Licensed & insured" },
           ].map((s) => (
             <div key={s.v} className="bg-card px-6 py-8 text-center">
               <div className="text-4xl font-bold text-accent sm:text-5xl">{s.k}</div>
@@ -202,7 +202,7 @@ const Index = () => {
               </div>
               <div className="space-y-3">
                 <Button asChild variant="hero" size="xl" className="w-full justify-between">
-                  <a href="tel:6174802895">(617) 480-2895 <Phone /></a>
+                  <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                   <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
