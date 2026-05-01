@@ -40,7 +40,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-16 object-contain invert sm:h-20 sm:w-20" />
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-auto object-contain sm:h-20" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
@@ -61,7 +61,7 @@ const Index = () => {
                 Modern Spaces.<br />Built To Last.
               </h1>
               <h1 className="hero-crossfade absolute inset-0 max-w-3xl font-bold leading-[1.05] text-primary-foreground opacity-0 sm:text-5xl lg:text-7xl text-6xl">
-                Quality You<br />Can See. Results<br />That Last.
+                Crafted With<br />Care. Built<br />To Impress.
               </h1>
             </div>
             <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-primary-foreground/90 drop-shadow-lg sm:text-xl">
@@ -70,9 +70,6 @@ const Index = () => {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild variant="hero" size="xl">
                 <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
-              </Button>
-              <Button asChild variant="subtle" size="xl">
-                <a href="tel:8574885197">Or (857) 488-5197 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <a href="mailto:devanx08@gmail.com">Email Us <Mail /></a>
@@ -193,7 +190,7 @@ const Index = () => {
             </div>
             <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
               <div className="mb-6 flex items-center gap-3">
-                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-20 w-20 object-contain invert" />
+                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-20 w-auto object-contain" />
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
                   <div className="text-lg font-semibold">Build · Remodel · Restore</div>
