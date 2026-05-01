@@ -12,14 +12,30 @@ import porchRailing from "@/assets/tmd/gallery/porch-railing.jpg";
 import slidingDoor from "@/assets/tmd/gallery/sliding-door.jpg";
 import excavation from "@/assets/tmd/gallery/excavation.jpg";
 import deckBuild from "@/assets/tmd/gallery/deck-build.jpg";
+import genKitchen from "@/assets/tmd/gallery/gen-kitchen-modern.jpg";
+import genBathroom from "@/assets/tmd/gallery/gen-bathroom-luxury.jpg";
+import genBasement from "@/assets/tmd/gallery/gen-basement-finished.jpg";
+import genBuiltins from "@/assets/tmd/gallery/gen-builtins-carpentry.jpg";
+import genDeck from "@/assets/tmd/gallery/gen-deck-finished.jpg";
+import genRoofing from "@/assets/tmd/gallery/gen-roofing.jpg";
+import genHardwood from "@/assets/tmd/gallery/gen-hardwood-floor.jpg";
+import genPaint from "@/assets/tmd/gallery/gen-interior-paint.jpg";
 
 const projects = [
+  { src: genKitchen, title: "Modern White Kitchen Remodel", category: "Kitchen" },
+  { src: genBathroom, title: "Luxury Master Bathroom", category: "Bathroom" },
   { src: patioFirepit, title: "Paver Patio & Fire Pit", category: "Hardscape" },
+  { src: genDeck, title: "Composite Deck With Railings", category: "Decks" },
   { src: bathroomShower, title: "Custom Tile Shower Build", category: "Bathroom" },
+  { src: genBuiltins, title: "Custom Built-Ins & Mantel", category: "Carpentry" },
   { src: frontPorchStairs, title: "Front Porch & Stair Rebuild", category: "Carpentry" },
+  { src: genHardwood, title: "Herringbone Hardwood Flooring", category: "Flooring" },
   { src: brickPatio, title: "Brick Patio Installation", category: "Hardscape" },
+  { src: genBasement, title: "Finished Basement Build-Out", category: "Basement" },
+  { src: genRoofing, title: "Architectural Shingle Roofing", category: "Roofing" },
   { src: kitchenFloor, title: "Marble Kitchen Flooring", category: "Kitchen" },
   { src: deckBuild, title: "Composite Deck Construction", category: "Decks" },
+  { src: genPaint, title: "Interior Paint & Trim", category: "Painting" },
   { src: paverSteps, title: "Bluestone Paver Steps", category: "Hardscape" },
   { src: porchRailing, title: "Front Porch Railing & Skirt", category: "Carpentry" },
   { src: slidingDoor, title: "Slider & Trim Installation", category: "Carpentry" },
