@@ -190,7 +190,7 @@ const Index = () => {
             </div>
             <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
               <div className="mb-6 flex items-center gap-3">
-                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-20 w-auto object-contain" />
+                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-14 w-auto object-contain" />
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
                   <div className="text-lg font-semibold">Build · Remodel · Restore</div>
