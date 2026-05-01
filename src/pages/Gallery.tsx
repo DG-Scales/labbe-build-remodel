@@ -8,7 +8,7 @@ import bathroomShower from "@/assets/tmd/gallery/bathroom-shower.jpg";
 import kitchenFloor from "@/assets/tmd/gallery/kitchen-floor.jpg";
 import frontPorchStairs from "@/assets/tmd/gallery/front-porch-stairs.jpg";
 import brickPatio from "@/assets/tmd/gallery/brick-patio.jpg";
-import bathroomBefore from "@/assets/tmd/gallery/bathroom-before.jpg";
+import porchRailing from "@/assets/tmd/gallery/porch-railing.jpg";
 import slidingDoor from "@/assets/tmd/gallery/sliding-door.jpg";
 import excavation from "@/assets/tmd/gallery/excavation.jpg";
 import deckBuild from "@/assets/tmd/gallery/deck-build.jpg";
@@ -21,7 +21,7 @@ const projects = [
   { src: kitchenFloor, title: "Marble Kitchen Flooring", category: "Kitchen" },
   { src: deckBuild, title: "Composite Deck Construction", category: "Decks" },
   { src: paverSteps, title: "Bluestone Paver Steps", category: "Hardscape" },
-  { src: bathroomBefore, title: "Bathroom Renovation — In Progress", category: "Bathroom" },
+  { src: porchRailing, title: "Front Porch Railing & Skirt", category: "Carpentry" },
   { src: slidingDoor, title: "Slider & Trim Installation", category: "Carpentry" },
   { src: excavation, title: "Site Prep & Excavation", category: "Site Work" },
 ];
