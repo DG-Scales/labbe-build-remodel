@@ -40,7 +40,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-24 w-auto object-contain drop-shadow-lg sm:h-32 lg:h-36" />
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-auto object-contain drop-shadow-lg sm:h-20 lg:h-24" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
@@ -72,7 +72,7 @@ const Index = () => {
                 <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
-                <a href="mailto:devanx08@gmail.com">Email Us <Mail /></a>
+                <a href="mailto:tmdremodeling0227@gmail.com">Email Us <Mail /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <Link to="/reviews">Leave A 5-Star Review <MessageSquareHeart /></Link>
@@ -190,7 +190,7 @@ const Index = () => {
             </div>
             <div className="border-t border-primary-foreground/15 bg-background/40 p-10 sm:p-12 lg:border-l lg:border-t-0">
               <div className="mb-6 flex items-center gap-3">
-                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-20 w-auto object-contain" />
+                <img src={tmdLogo} alt="TMD Remodeling logo" className="h-14 w-auto object-contain" />
                 <div>
                   <div className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-foreground/60">TMD Remodeling</div>
                   <div className="text-lg font-semibold">Build · Remodel · Restore</div>
@@ -204,7 +204,7 @@ const Index = () => {
                   <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                  <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+                  <a href="mailto:tmdremodeling0227@gmail.com">tmdremodeling0227@gmail.com <Mail /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                   <Link to="/reviews">Leave A 5-Star Review <MessageSquareHeart /></Link>

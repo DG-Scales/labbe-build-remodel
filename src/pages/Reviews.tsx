@@ -21,7 +21,7 @@ const reviewLinks = [
   {
     title: "Referral",
     text: "Know someone planning a renovation? A quick intro means the world.",
-    href: "mailto:devanx08@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
+    href: "mailto:tmdremodeling0227@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
     label: "Email A Referral",
     icon: Mail,
   },
@@ -40,7 +40,7 @@ const Reviews = () => {
       <nav className="border-b border-border bg-card">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <Link to="/" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-24 w-auto object-contain sm:h-28" />
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-auto object-contain sm:h-20" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-foreground sm:inline">TMD Remodeling</span>
           </Link>
           <Button asChild variant="subtle">
@@ -134,7 +134,7 @@ const Reviews = () => {
                 <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+                <a href="mailto:tmdremodeling0227@gmail.com">tmdremodeling0227@gmail.com <Mail /></a>
               </Button>
               <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                 <Link to="/">Back To Home <ArrowLeft className="rotate-180" /></Link>
