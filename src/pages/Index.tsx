@@ -46,6 +46,7 @@ const Index = () => {
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
             <a className="transition hover:text-accent" href="#services">Services</a>
             <a className="transition hover:text-accent" href="#about">About</a>
+            <Link className="transition hover:text-accent" to="/gallery">Gallery</Link>
             <Link className="transition hover:text-accent" to="/reviews">Reviews</Link>
             <a className="transition hover:text-accent" href="#contact">Contact</a>
           </div>
