@@ -1,0 +1,91 @@
+import { ArrowLeft, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import tmdLogo from "@/assets/tmd/tmd-logo.png";
+import patioFirepit from "@/assets/tmd/gallery/patio-firepit.jpg";
+import paverSteps from "@/assets/tmd/gallery/paver-steps.jpg";
+import bathroomShower from "@/assets/tmd/gallery/bathroom-shower.jpg";
+import kitchenFloor from "@/assets/tmd/gallery/kitchen-floor.jpg";
+import frontPorchStairs from "@/assets/tmd/gallery/front-porch-stairs.jpg";
+import brickPatio from "@/assets/tmd/gallery/brick-patio.jpg";
+import bathroomBefore from "@/assets/tmd/gallery/bathroom-before.jpg";
+import slidingDoor from "@/assets/tmd/gallery/sliding-door.jpg";
+import excavation from "@/assets/tmd/gallery/excavation.jpg";
+import deckBuild from "@/assets/tmd/gallery/deck-build.jpg";
+
+const projects = [
+  { src: patioFirepit, title: "Paver Patio & Fire Pit", category: "Hardscape" },
+  { src: bathroomShower, title: "Custom Tile Shower Build", category: "Bathroom" },
+  { src: frontPorchStairs, title: "Front Porch & Stair Rebuild", category: "Carpentry" },
+  { src: brickPatio, title: "Brick Patio Installation", category: "Hardscape" },
+  { src: kitchenFloor, title: "Marble Kitchen Flooring", category: "Kitchen" },
+  { src: deckBuild, title: "Composite Deck Construction", category: "Decks" },
+  { src: paverSteps, title: "Bluestone Paver Steps", category: "Hardscape" },
+  { src: bathroomBefore, title: "Bathroom Renovation — In Progress", category: "Bathroom" },
+  { src: slidingDoor, title: "Slider & Trim Installation", category: "Carpentry" },
+  { src: excavation, title: "Site Prep & Excavation", category: "Site Work" },
+];
+
+const Gallery = () => {
+  return (
+    <main className="min-h-screen bg-background text-foreground">
+      <header className="border-b border-border bg-primary text-primary-foreground">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
+          <Link to="/" className="flex items-center gap-3">
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-14 w-auto object-contain drop-shadow-lg sm:h-16" />
+            <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] sm:inline">TMD Remodeling</span>
+          </Link>
+          <Button asChild variant="subtle" size="sm">
+            <Link to="/"><ArrowLeft className="h-4 w-4" /> Back Home</Link>
+          </Button>
+        </div>
+      </header>
+
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
+        <div className="mb-12 max-w-2xl">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">Our Work</p>
+          <h1 className="text-4xl font-bold leading-tight sm:text-5xl">Project Gallery</h1>
+          <p className="mt-5 text-lg leading-8 text-muted-foreground">
+            A look at recent remodels, builds, and restorations across the North Shore and greater Boston.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p) => (
+            <figure key={p.title} className="group relative overflow-hidden rounded-lg border border-border bg-card shadow-soft transition hover:shadow-crafted">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={p.src}
+                  alt={p.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <figcaption className="flex items-center justify-between gap-3 px-5 py-4">
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{p.category}</div>
+                  <div className="mt-1 font-semibold">{p.title}</div>
+                </div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <div className="mt-16 flex flex-col items-center gap-4 rounded-lg border border-border bg-card p-10 text-center sm:p-12">
+          <h2 className="text-3xl font-bold sm:text-4xl">Like What You See?</h2>
+          <p className="max-w-xl text-muted-foreground">Reach out for a free estimate on your next project.</p>
+          <div className="mt-2 flex flex-col gap-3 sm:flex-row">
+            <Button asChild variant="hero" size="xl">
+              <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
+            </Button>
+            <Button asChild variant="subtle" size="xl">
+              <a href="mailto:tmdremodeling0227@gmail.com">Email Us <Mail /></a>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default Gallery;
