@@ -72,7 +72,7 @@ const Index = () => {
                 <a href="tel:6174802895">Call (617) 480-2895 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
-                <a href="mailto:devanx08@gmail.com">Email Us <Mail /></a>
+                <a href="mailto:tmdremodeling0227@gmail.com">Email Us <Mail /></a>
               </Button>
               <Button asChild variant="subtle" size="xl">
                 <Link to="/reviews">Leave A 5-Star Review <MessageSquareHeart /></Link>
@@ -204,7 +204,7 @@ const Index = () => {
                   <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                  <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+                  <a href="mailto:tmdremodeling0227@gmail.com">tmdremodeling0227@gmail.com <Mail /></a>
                 </Button>
                 <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                   <Link to="/reviews">Leave A 5-Star Review <MessageSquareHeart /></Link>

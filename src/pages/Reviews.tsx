@@ -21,7 +21,7 @@ const reviewLinks = [
   {
     title: "Referral",
     text: "Know someone planning a renovation? A quick intro means the world.",
-    href: "mailto:devanx08@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
+    href: "mailto:tmdremodeling0227@gmail.com?subject=Referral%20for%20TMD%20Remodeling",
     label: "Email A Referral",
     icon: Mail,
   },
@@ -134,7 +134,7 @@ const Reviews = () => {
                 <a href="tel:8574885197">(857) 488-5197 <Phone /></a>
               </Button>
               <Button asChild variant="subtle" size="xl" className="w-full justify-between">
-                <a href="mailto:devanx08@gmail.com">devanx08@gmail.com <Mail /></a>
+                <a href="mailto:tmdremodeling0227@gmail.com">tmdremodeling0227@gmail.com <Mail /></a>
               </Button>
               <Button asChild variant="subtle" size="xl" className="w-full justify-between">
                 <Link to="/">Back To Home <ArrowLeft className="rotate-180" /></Link>
