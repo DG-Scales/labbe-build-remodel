@@ -101,26 +101,36 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services - clean numbered list */}
+      {/* Services - editorial row layout */}
       <section id="services" className="bg-background py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="mb-14 max-w-2xl">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">What we do</p>
-            <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Remodeling Done Right, Start To Finish.</h2>
+          <div className="mb-14 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
+            <div>
+              <p className="mb-3 text-sm font-bold uppercase tracking-[0.22em] text-accent">What we do</p>
+              <h2 className="text-4xl font-bold leading-tight sm:text-5xl">Built For The Way You Live.</h2>
+            </div>
+            <p className="max-w-md text-muted-foreground md:text-right">
+              Five core services. One crew that handles your project from first sketch to final walkthrough.
+            </p>
           </div>
-          <div className="grid gap-px bg-border md:grid-cols-2">
+
+          <div className="border-t border-border">
             {services.map((service, i) => (
-              <article key={service.title} className="group flex gap-6 bg-background p-8 transition hover:bg-card">
-                <div className="flex-shrink-0">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-md border border-border bg-card text-accent transition group-hover:border-accent">
-                    <service.icon className="h-6 w-6" />
-                  </div>
-                  <div className="mt-3 text-center font-mono text-xs text-muted-foreground">0{i + 1}</div>
+              <article
+                key={service.title}
+                className="group grid grid-cols-[auto_1fr] items-start gap-x-6 gap-y-3 border-b border-border py-8 transition hover:bg-card sm:grid-cols-[6rem_auto_1fr_auto] sm:items-center sm:gap-x-8 sm:py-10"
+              >
+                <div className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+                  0{i + 1}
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold">{service.title}</h3>
-                  <p className="mt-3 leading-7 text-muted-foreground">{service.text}</p>
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-border bg-card text-accent transition group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground sm:h-16 sm:w-16">
+                  <service.icon className="h-6 w-6 sm:h-7 sm:w-7" />
                 </div>
+                <div className="col-span-2 sm:col-span-1">
+                  <h3 className="text-2xl font-semibold sm:text-3xl">{service.title}</h3>
+                  <p className="mt-2 max-w-2xl leading-7 text-muted-foreground">{service.text}</p>
+                </div>
+                <ArrowRight className="hidden h-6 w-6 text-muted-foreground transition group-hover:translate-x-1 group-hover:text-accent sm:block" />
               </article>
             ))}
           </div>
