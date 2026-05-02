@@ -14,12 +14,13 @@ import excavation from "@/assets/tmd/gallery/excavation.jpg";
 import deckBuild from "@/assets/tmd/gallery/deck-build.jpg";
 import genKitchen from "@/assets/tmd/gallery/gen-kitchen-modern.jpg";
 import genBathroom from "@/assets/tmd/gallery/gen-bathroom-luxury.jpg";
-import genBasement from "@/assets/tmd/gallery/gen-basement-finished.jpg";
+
 import genBuiltins from "@/assets/tmd/gallery/gen-builtins-carpentry.jpg";
 import genDeck from "@/assets/tmd/gallery/gen-deck-finished.jpg";
 import genRoofing from "@/assets/tmd/gallery/gen-roofing.jpg";
-import genHardwood from "@/assets/tmd/gallery/gen-hardwood-floor.jpg";
 import genPaint from "@/assets/tmd/gallery/gen-interior-paint.jpg";
+import genSiding from "@/assets/tmd/gallery/gen-siding.jpg";
+import genWindow from "@/assets/tmd/gallery/gen-window.jpg";
 
 const projects = [
   { src: genKitchen, title: "Modern White Kitchen Remodel", category: "Kitchen" },
@@ -29,9 +30,9 @@ const projects = [
   { src: bathroomShower, title: "Custom Tile Shower Build", category: "Bathroom" },
   { src: genBuiltins, title: "Custom Built-Ins & Mantel", category: "Carpentry" },
   { src: frontPorchStairs, title: "Front Porch & Stair Rebuild", category: "Carpentry" },
-  { src: genHardwood, title: "Herringbone Hardwood Flooring", category: "Flooring" },
+  { src: genSiding, title: "Vinyl Siding Installation", category: "Siding" },
   { src: brickPatio, title: "Brick Patio Installation", category: "Hardscape" },
-  { src: genBasement, title: "Finished Basement Build-Out", category: "Basement" },
+  { src: genWindow, title: "Window Replacement", category: "Windows" },
   { src: genRoofing, title: "Architectural Shingle Roofing", category: "Roofing" },
   { src: kitchenFloor, title: "Marble Kitchen Flooring", category: "Kitchen" },
   { src: deckBuild, title: "Composite Deck Construction", category: "Decks" },
