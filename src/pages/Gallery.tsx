@@ -14,7 +14,7 @@ import excavation from "@/assets/tmd/gallery/excavation.jpg";
 import deckBuild from "@/assets/tmd/gallery/deck-build.jpg";
 import genKitchen from "@/assets/tmd/gallery/gen-kitchen-modern.jpg";
 import genBathroom from "@/assets/tmd/gallery/gen-bathroom-luxury.jpg";
-import genBasement from "@/assets/tmd/gallery/gen-basement-finished.jpg";
+
 import genBuiltins from "@/assets/tmd/gallery/gen-builtins-carpentry.jpg";
 import genDeck from "@/assets/tmd/gallery/gen-deck-finished.jpg";
 import genRoofing from "@/assets/tmd/gallery/gen-roofing.jpg";

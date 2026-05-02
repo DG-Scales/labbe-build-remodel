@@ -66,7 +66,7 @@ const Index = () => {
               </h1>
             </div>
             <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-primary-foreground/90 drop-shadow-lg sm:text-xl">
-              TMD Remodeling builds, remodels, and restores homes across Boston's North Shore — from kitchens and baths to full-home transformations.
+              From the first swing of the hammer to the final coat of paint — TMD Remodeling builds homes you'll be proud of for years to come.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild variant="hero" size="xl">
@@ -214,7 +214,10 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/15 pt-8 text-sm text-primary-foreground/60 sm:flex-row">
-            <div>© {new Date().getFullYear()} TMD Remodeling. All rights reserved.</div>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+              <span>© {new Date().getFullYear()} TMD Remodeling. All rights reserved.</span>
+              <Link to="/privacy" className="transition hover:text-accent">Privacy Policy</Link>
+            </div>
             <div className="flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-accent" /> Licensed & insured · Massachusetts</div>
           </div>
         </div>
