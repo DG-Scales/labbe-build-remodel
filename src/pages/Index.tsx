@@ -1,4 +1,4 @@
-import { ArrowRight, Bath, Check, Hammer, Home, Mail, MapPin, MessageSquareHeart, Phone, Ruler, ShieldCheck, Star } from "lucide-react";
+import { ArrowRight, Bath, Check, Hammer, Home, Mail, MapPin, MessageSquareHeart, Phone, Ruler, ShieldCheck, Star, TreePine } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroHome from "@/assets/tmd/hero-home.jpg";
@@ -9,10 +9,11 @@ import carpentryImage from "@/assets/tmd/carpentry.jpg";
 import tmdLogo from "@/assets/tmd/tmd-logo.png";
 
 const services = [
-  { icon: Home, title: "Whole-Home Remodels", text: "End-to-end renovations that modernize layouts, finishes, and the way you use your space." },
   { icon: Bath, title: "Kitchens & Bathrooms", text: "Sleek, functional updates with premium materials, smart layouts, and clean finish work." },
+  { icon: TreePine, title: "Hardscaping", text: "Paver patios, walkways, fire pits, retaining walls, and outdoor living spaces built to last." },
+  { icon: Hammer, title: "Custom Carpentry", text: "Built-ins, trim, doors, decks, and detail work crafted to fit your home perfectly." },
+  { icon: Home, title: "Whole-Home Remodels", text: "End-to-end renovations that modernize layouts, finishes, and the way you use your space." },
   { icon: Ruler, title: "Additions & Restorations", text: "Expand your footprint or restore character with careful planning and quality construction." },
-  { icon: Hammer, title: "Custom Carpentry", text: "Built-ins, trim, doors, and detail work crafted to fit your home perfectly." },
 ];
 
 const values = [
@@ -40,7 +41,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-hero-overlay" />
         <nav className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8">
           <a href="#top" className="flex items-center gap-3 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background">
-            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-16 w-auto object-contain drop-shadow-lg sm:h-20 lg:h-24" />
+            <img src={tmdLogo} alt="TMD Remodeling logo" className="h-24 w-auto object-contain drop-shadow-lg sm:h-28 lg:h-32" />
             <span className="hidden text-sm font-semibold uppercase tracking-[0.22em] text-primary-foreground sm:inline">TMD Remodeling</span>
           </a>
           <div className="hidden items-center gap-6 text-sm font-medium text-primary-foreground/85 md:flex">
